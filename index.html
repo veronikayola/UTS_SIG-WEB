@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>One Page Wonder - Start Bootstrap Template</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#page-top">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about" id="nav-about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#myworks" id="nav-myworks">MY WORKS</a></li>
+                      </ul>                      
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="masthead text-center text-white" id="home">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-4">Ujian Tengah Semester</h1>
+                    <h2 class="masthead-subheading mb-0">PRAKTIKUM SISTEM INFORMASI GEOGRAFI BERBASIS WEB</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#about">Let's see here!</a>
+                </div>
+            </div>
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
+        <!-- Content section 1-->
+        <section class="page-section" id="about">
+            <div class="container px-5">
+              <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                  <div class="p-5">
+                    <img class="img-fluid rounded-circle" src="assets/img/foto vero.jpg" alt="..." />
+                  </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                  <div class="p-5">
+          
+                    <!-- TABEL DI ATAS -->
+                    <h2 class="display-4">Hello...</h2>
+                    <div class="info-table mb-4">
+                      <table>
+                        <tr>
+                          <td class="label">Nama</td>
+                          <td class="value">Veronika Yola Aditya</td>
+                        </tr>
+                        <tr class="gray-row">
+                          <td class="label">NIM</td>
+                          <td class="value">22/493426/TK/54052</td>
+                        </tr>
+                      </table>
+                    </div>
+          
+                    <!-- DESKRIPSI DI BAWAH -->
+                    <p>
+                      Saya adalah mahasiswa semester 6 yang berkuliah di Fakultas Teknik UGM dengan mengambil program studi Teknik Geodesi. 
+                      Pada semester genap di Program studi S1 Teknik Geodesi UGM, terdapat salah satu mata kuliah pilihan yang dapat diambil 
+                      ketika sudah mengambil Praktikum Sistem Informasi Geografi di semester sebelumnya, yaitu Praktikum Sistem Informasi 
+                      Geografi Berbasis Web. Praktikum ini mempelajari tentang bagaimana cara penggunaan bahasa-bahasa pemrograman seperti HTML, 
+                      CSS, dan JS untuk meghasilkan output sesuai dengan perintah pada modul praktikum. Pada minggu pertama sampai minggu ketiga, 
+                      praktikum diisi dengan pengenalan dasar-dasar dari bahasa pemrograman yang akan diguanakan untuk membuat website. 
+                      Kemudian, pada minggu keempat dan kelima, perkuliahan diisi dengan pengenalan bootsrap untuk dapat membuat website 
+                      pribadi dengan menggunakan template. Pada minggu keenam dan ketujuh, perkuliahan diisi dengan pengenalan LeafletJS dan GeoJSON 
+                      untuk dapat menampilkan output berupa peta dengan informasi berupa titik atau polygon di wilayah tertentu dengan terdapat 
+                      deskripsi atau keterangan singkat. Jika ingin mengetahui lebih lanjut tentang Teknik Geodei UGM, klik pop up di bawah ini ↓
+                    </p>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#" onclick="openPopup()">Teknik Geodesi</a>
+
+                    <script>
+                      function openPopup() {
+                        window.open("https://geodesi.ugm.ac.id/", "_blank", "width=800,height=600");
+                      }
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <!--Content Section 2-->
+        <section class="page-section" id="myworks">
+            <div class="container px-4 px-lg-5"> 
+                <h2 class="text-center mt-0">Peta 5 Fakultas di UGM</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                    </div>
+        </section>
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <section class="page-section bg-light" id="map">
+            <div class="container" style="max-width: 800px; margin: auto; background-color: white;">
+              <div id="mapid" style="height: 400px; border-radius: 5px;"></div>
+            </div>
+          </section>
+          <script>
+            // Koordinat UGM
+            var mymap = L.map('mapid').setView([-7.769937792488498, 110.37672286972213], 14);
+          
+            // Tambahkan tile map dari OpenStreetMap
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+            }).addTo(mymap);
+          
+           // Tambahkan marker ke UGM
+           //fkkmk
+           L.marker([-7.7693057432367505, 110.37415605367441]).addTo(mymap)
+            .bindPopup(`
+            <div style="text-align: center;">
+            <b>Fakultas KKMK UGM</b>
+           <img src= "https://ugm.ac.id/wp-content/uploads/2022/11/fak-kedokteran-masayarakat.jpg" style="width: 150px; height: auto; margin-top: 5px;">
+    </div>
+            </div>
+            <div style="text-align: justify;">
+          Jl. Farmako, Sekip Utara, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
+            </div>`)
+            .openPopup();
+            //kehutanan
+            L.marker([-7.766813684043238, 110.38100219415294]).addTo(mymap)
+            .bindPopup(`
+            <div style="text-align: center;">
+            <b> Fakultas Kehutanan UGM</b>
+            <img src= "https://ugm.ac.id/wp-content/uploads/2020/10/23102016034258081307862270.jpg" style="width: 150px; height: auto; margin-top: 5px;">
+            </div>
+            <div style="text-align: justify;">
+           Jl. Agro Bulaksumur No.1, Caturtunggal, Yogyakarta, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
+            </div>`)
+            .openPopup();
+            //FEB
+            L.marker([-7.770601913505517, 110.37886382113867]).addTo(mymap)
+            .bindPopup(`
+            <div style="text-align: center;">
+            <b> Fakultas Ekonomika dan  Bisnis UGM</b>
+            <img src= "https://feb.ugm.ac.id/wp-content/uploads/sites/47/2020/05/feb-mainentrance.jpg" style="width: 150px; height: auto; margin-top: 5px;">
+            </div>
+            <div style="text-align: justify;">
+            Jalan Sosio Humaniora No:1, Bulaksumur, Caturtunggal, Depok, Sleman Regency, Special Region of Yogyakarta 55281
+            </div>`)
+            .openPopup();
+            //FT
+            L.marker([-7.76529323672534, 110.37223869380867]).addTo(mymap)
+            .bindPopup(`
+            <div style="text-align: center;">
+            <b>Fakultas Teknik UGM</b>
+            <img src="https://ugm.ac.id/wp-content/uploads/2024/03/ftoke.jpg" alt="Fakultas Teknik UGM" style="width: 150px; height: auto; margin-top: 5px;">
+            </div>
+            </div>
+            <div style="text-align: justify;">
+            Jl. Grafika No.2, Senolowo, Sinduadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
+            </div>`)
+            .openPopup();
+            //FKH
+            L.marker([-7.767446196850753, 110.3848966583285]).addTo(mymap)
+            .bindPopup(`
+            <div style="text-align: center;">
+            <b>Fakultas Kedokteran Hewan UGM</b>
+            <img src="https://ugm.ac.id/wp-content/uploads/2011/08/KH.jpg" alt="Fakultas Teknik UGM" style="width: 150px; height: auto; margin-top: 5px;">
+            </div>
+            <div style="text-align: justify;">
+           Jl. Fauna No.2, Karang Gayam, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
+            </div>`)
+            .openPopup();
+          </script>
+<style>
+.popup-content img {
+  width: 50px; /* Ubah ukuran gambar */
+  border-radius: 3px;
+  margin-top: 3px;
+} 
+</style>
+        <!--Content Section 2-->
+<section class="page-section" id="myworks">
+  <div class="container px-4 px-lg-5"> 
+    <hr class="divider" />
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-lg-6 col-md-8 text-center">
+        <div class="form-box p-4 rounded shadow">
+          <h4 class="form-title mb-4">Formulir Validasi Pekerjaan Selesai</h4>
+          <form action="#" method="POST">
+            <div class="mb-3 text-start">
+              <label for="password" class="form-label">Masukkan Kata Sandi:</label>
+              <form onsubmit="return validatePassword()"></form>
+              <input type="password" id="password" required />
+            </div>
+            <button type="submit" class="btn-custom w-100">Validasi</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script>
+        function validatePassword() {
+            let password = document.getElementById("password").value;
+            if (password !== "Selesai") {
+                alert("password salah");
+                return false; // Mencegah form terkirim
+            }
+            return true; // Mengizinkan form terkirim jika password benar
+        }
+    </script>
+</section>
+
+<style>
+  :root {
+    --bs-pink: #ee0979;
+    --bs-red: #dc3545;
+    --bs-orange: #ff6a00;
+    --bs-yellow: #ffc107;
+  }
+
+  .form-box {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    border: 2px solid var(--bs-yellow);
+  }
+
+  .form-title {
+    background-color: var(--bs-pink);
+    color: white;
+    padding: 10px;
+    border: 3px solid var(--bs-red);
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .form-label {
+    font-weight: bold;
+    color: var(--bs-red);
+  }
+
+  .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid var(--bs-orange);
+  }
+
+  .btn-custom {
+    background-color: var(--bs-orange);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .btn-custom:hover {
+    background-color: var(--bs-yellow);
+    color: #333;
+  }
+</style>
+
+          
+
+
+
+
+
+        <!-- Footer-->
+        <footer class="py-5 bg-black">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Veronika Yola 2025 </p></div>
+        </footer>
+        <!-- Bootstrap core JS--> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
